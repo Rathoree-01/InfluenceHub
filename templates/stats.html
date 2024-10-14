@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+#container {
+  width: 80%;
+  margin: 20px auto;
+  border: 1px solid black;
+}
+
+#header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  border-bottom: 1px solid black;
+  padding: 0 20px;
+}
+
+#header h3 {
+  margin: 0;
+}
+
+#content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+.chart-container {
+  width: 30%;
+}
+
+.chart {
+  width: 100%;
+  height: 200px;
+  border: 1px solid black;
+}
+
+.bar {
+  width: 20px;
+  height: 100px;
+  background-color: black;
+  margin: 10px;
+  display: inline-block;
+}
+
+.pie-container {
+  width: 30%;
+}
+
+.pie {
+  width: 100%;
+  height: 200px;
+  border-radius: 50%;
+  border: 1px solid black;
+  position: relative;
+}
+
+.pie-slice {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: lightblue;
+  transform-origin: 50% 100%;
+  transform: rotate(45deg);
+}
+</style>
+</head>
+<body>
+<div id="container">
+  <div id="header">
+    <h3>Find</h3>
+    <h3>Stats</h3>
+  </div>
+  <div id="content">
+    <div class="chart-container">
+      <div class="chart">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </div>
+    <div class="pie-container">
+      <div class="pie">
+        <div class="pie-slice"></div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,279 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Influencer Dashboard</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: green;
+  color: white;
+}
+/*.profile-info {
+    margin-left:0;
+}*/
+
+.profile-info h1 {
+    margin: 0;
+}
+        /*.container {
+            width: 80%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }*/
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .profile-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .profile-picture {
+         
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .profile-picture img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .nav-links {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .nav-links li {
+            margin-right: 20px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .active-compaigns {
+            margin-bottom: 20px;
+        }
+        .compaign-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .compaign-info {
+            display: flex;
+            align-items: center;
+        }
+        .compaign-info h3 {
+            margin: 0 10px 0 0;
+        }
+        .compaign-progress {
+            display: flex;
+            align-items: center;
+        }
+        .compaign-progress span {
+            margin-right: 10px;
+        }
+        .compaign-progress .progress-bar {
+            width: 100px;
+            height: 10px;
+            background-color: #eee;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .compaign-progress .progress-fill {
+            height: 100%;
+            background-color: #4CAF50;
+        }
+        .compaign-actions {
+            display: flex;
+            align-items: center;
+        }
+        .compaign-actions button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+            cursor: pointer;
+            border: 2px solid #ddd;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .non-requests {
+            margin-bottom: 20px;
+        }
+        .request-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .request-info {
+            display: flex;
+            align-items: center;
+        }
+        .request-info h3 {
+            margin: 0 10px 0 0;
+        }
+        .request-actions {
+            display: flex;
+            align-items: center;
+        }
+        .request-actions button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        .request-actions button.reject {
+            background-color: #f44336;
+        }
+   btnview{     background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  }
+    </style>
+</head>
+<body><!--<div class="topnav">
+  <a class="active" href="#">Influencer Dashboard</a>
+  <a href="#">Info</a>
+  <a href="#">Find</a>
+  <a href="#">Status</a>
+  <a href="#">Layout</a>
+</div>-->
+    <div class="container">
+      <div class="topnav">
+        <a class="active" href="/influ_dash">Influencer Dashboard</a>
+        <a href="/influ_dash">Info</a>
+        <a href="/influ_2">Find</a>
+        <a href="#">Status</a>
+        <a href="#">Layout</a>
+      </div>
+        
+      <div class="profile-header">
+        <div class="profile-picture">
+            <img src="https://via.placeholder.com/150" alt="Profile Picture">
+        </div>
+        <div class="profile-info">
+            <h1>Welcome user 01</h1>
+            
+        </div>
+        <div class="nav-links">
+           
+        </div>
+    </div>
+        </div>
+        <h4>Rating</h4>
+        <h4>Earning this month :$500</h4>
+        <h3>Active Campaigns</h3>
+        <div class="active-compaigns">
+            <div class="compaign-item">
+                <div class="compaign-info">
+                    <h3>Compaigns 01</h3>
+                    <span>Progress 60%</span>
+                </div>
+                <div class="compaign-actions">
+                    <button class="btnview"><a href="influ_3">view</a></button>
+                </div>
+            </div>
+            <div class="compaign-item">
+                <div class="compaign-info">
+                    <h3>Compaigns 02</h3>
+                    <span>Progress 40%</span>
+                </div>
+                <div class="compaign-actions">
+                    <button class="btnview" onclick="open"><a href="influ_3">view</a></button>
+                </div>
+            </div>
+        </div>
+        <h3>Non Requests:</h3>
+        <div class="non-requests">
+            <div class="request-item">
+                <div class="request-info">
+                    <h3>Compaigns 03</h3>
+                    <span>Company 01</span>
+                </div>
+                <div class="request-actions">
+                    <button class=" button btnview"onclick="toggleDetails()"><a href="influ_3">view</a></button>
+                    <button>Accept</button>
+                    <button class="reject">Reject</button>
+                </div>
+            </div>
+            <div class="request-item">
+                <div class="request-info">
+                    <h3>Compaigns 04</h3>
+                    <span>Company 02</span>
+                </div>
+                <div class="request-actions">
+                    <button class="btnview"><a href="influ_3">view</a></button>
+                    <button>Accept</button>
+                    <button class="reject">Reject</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!DOCTYPE html>
+<html>
+<head>
+
+</style>
+</head>
+<body>
+</body>
+</html>
+</body>
+</html>

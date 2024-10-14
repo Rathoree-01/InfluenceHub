@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect Example</title>
+    <style>
+        .plus-icon {
+            font-size: 24px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        {% for value, label in item.items() %}
+            <li>{{ label }}</li>
+        {% endfor %}
+        <!-- Add more options as needed -->
+    </ul>
+    <div class="plus-icon" onclick="redirectToDetails()">+</div>
+    <script>
+        function redirectToDetails() {
+            // Get details from the page
+            const listItems = document.querySelectorAll('ul li');
+            const name = listItems[0] ? listItems[0].innerText : '';
+            const description = listItems[1] ? listItems[1].innerText : '';
+            const start = listItems[2] ? listItems[2].innerText : '';
+            const end = listItems[3] ? listItems[3].innerText : '';
+            const visibility = listItems[4] ? listItems[4].innerText : '';
+            const goals = listItems[5] ? listItems[5].innerText : '';
+
+            // Construct the URL with the details as query parameters
+            const url = `/spons_2?name=${encodeURIComponent(name)}&description=${encodeURIComponent(description)}&start=${encodeURIComponent(start)}&end=${encodeURIComponent(end)}&visibility=${encodeURIComponent(visibility)}&goals=${encodeURIComponent(goals)}`;
+
+            // Redirect to the URL
+            window.location.href = url;
+        }
+    </script>
+</body>
+</html>

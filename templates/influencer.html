@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>influencer registeration</title>
+</head>
+<style>
+    body{
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+  }
+
+form {
+   
+    padding: 20px; /* Padding inside the form */
+    border-radius: 5px; }
+   #in{
+            max-width: 300px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            padding: 25px;
+        }
+        
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            align-content: center;
+        }
+
+        button {
+            background-color:blue;
+            color: white;
+            padding: 10px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            align-content: center;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+        .main{
+          align-content: center;
+        }
+        body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f1f1f1;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+.heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.platforms {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.platform {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 0 10px;
+}
+
+.arrow {
+  margin-right: 10px;
+  transform: rotate(-45deg);
+}
+ 
+</style>
+<body> 
+<div class="main">
+<form action="" method="POST">
+  <h2>Influencer Registeration</h2>
+  <p>{{message}} </p><br>
+  <div  id="in"> 
+    
+
+    <div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+  </div>
+  <div>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+  </div>
+  <div>
+    <label for="industry">Confirm Password:</label>
+    <input type="password" id="confirm_password" name="confirm_password" required>
+  </div>
+
+  <div class="heading">Platform Presence</div>
+  <div class="platforms">
+    <div class="platform">
+      
+      Google
+    </div>
+    <div class="platform">
+      Twitter
+    </div>
+    <div class="platform">
+      Insta
+    </div>
+  </div> 
+  <input id="submit" name="submit" type="submit" value="Register">
+  
+
+  </div>
+</form>
+</div>
+
+
+</body>
+</html>

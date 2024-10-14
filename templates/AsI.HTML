@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Content Example</title>
+    <style>
+        /* CSS directly in HTML for simplicity */
+        #content {
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        .item {
+            padding: 10px;
+            margin: 5px 0;
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div id="content"></div>
+    <button id="addButton">Add</button>
+
+    <script>
+        // JavaScript directly in HTML for simplicity
+        document.getElementById('addButton').addEventListener('click', function() {
+            const newItem = document.createElement('div');
+            newItem.className = 'item';
+            newItem.textContent = 'New Item ' + (document.getElementsByClassName('item').length + 1);
+            document.getElementById('content').appendChild(newItem);
+        });
+    </script>
+</body>
+</html>
